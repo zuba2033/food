@@ -4,10 +4,10 @@ function calc() {
      // КАЛЬКУЛЯТОР КАЛЛОРИЙ на сайте
     
      let gender,
-     activityCoeff,
-     height = 0,
-     weight = 0,
-     age = 0;
+        activityCoeff,
+        height = 0,
+        weight = 0,
+        age = 0;
 
     if (localStorage.getItem('gender')) {
         gender = localStorage.getItem('gender');
