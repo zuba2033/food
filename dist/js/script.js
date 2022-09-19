@@ -6,7 +6,6 @@ import cards from './modules/cards';
 import calc from './modules/calc';
 import forms from './modules/forms';
 import slider from './modules/slider';
-import { container } from 'webpack';
 
 window.addEventListener('DOMContentLoaded', function() {
 
@@ -26,7 +25,7 @@ window.addEventListener('DOMContentLoaded', function() {
         indicatorsClass: 'carousel-indicators'
     });
     tabs('.tabheader__item', '.tabcontent', '.tabheader__items', 'tabheader__item_active');
-    timer('.timer', '2022-03-10');
+    timer('.timer', '2025-12-25');
 
 });
 
