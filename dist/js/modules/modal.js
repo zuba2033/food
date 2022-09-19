@@ -1,18 +1,18 @@
 function openModal(modalSelector, contentSelector) {
     const modal = document.querySelector(modalSelector),
         modalContent = modal.querySelector(contentSelector);
-    modal.classList.add('show');
-    modal.classList.add('fadeIn');
-    modalContent.classList.add('translateYdown');
-    modalContent.classList.remove('translateYup');
-    modal.classList.remove('hide');
-    modal.classList.remove('fadeOut');
-    document.body.style.cssText = `
-    height: 100vh;
-    overflow: hidden;
-    padding-right: 15px;
-    top: ${document.scrollTop}px;
-    `;
+        modal.classList.add('show');
+        modal.classList.add('fadeIn');
+        modalContent.classList.add('translateYdown');
+        modalContent.classList.remove('translateYup');
+        modal.classList.remove('hide');
+        modal.classList.remove('fadeOut');
+        document.body.style.cssText = `
+            height: 100vh;
+            overflow: hidden;
+            padding-right: 15px;
+            top: ${document.scrollTop}px;
+            `;
 }
 
 function closeModal(modalSelector) {
@@ -33,6 +33,7 @@ function closeAnimation(modalSelector, contentSelector) {
 }
 
 function modal(triggerSelector, modalSelector, contentSelector) {
+
     const modalTrigger = document.querySelectorAll(triggerSelector),
         modal = document.querySelector(modalSelector);
 
@@ -52,8 +53,8 @@ function modal(triggerSelector, modalSelector, contentSelector) {
         if (e.code === "Escape" && modal.classList.contains('show')) { 
             closeAnimation(modalSelector, contentSelector);
             setTimeout(() => closeModal(modalSelector), 800);
-    }
-});
+        }
+    });
 
 }
 
