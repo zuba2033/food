@@ -1,0 +1,65 @@
+.show {
+    display: flex;
+    opacity: 1;
+}
+.hide {
+    display: none;
+    opacity: 0;
+}
+.fadeIn {
+    animation-name:fadeIn;
+    animation-duration:1s;
+}
+.fadeOut {
+    animation-name:fadeOut;
+    animation-duration:1s;
+    animation-fill-mode: forwards;
+}
+.translateYdown {
+    animation-name:translateYdown;
+    animation-duration: 1s;
+}
+
+.translateYup {
+    animation-name:translateYup;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+
+@keyframes translateYdown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform:translateY(0);
+    }
+}
+
+@keyframes translateYup {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform:translateY(-100%);
+    }
+}
+
